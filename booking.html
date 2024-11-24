@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Booking</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+header{
+	background-color:DarkOliveGreen;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+footer{
+	padding: 20px;
+	background-color: DarkOliveGreen;
+	color: white;
+	margin-top:auto;
+}
+table{
+	width:100%;
+	color:white;
+	text-align: left;
+}
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: olive;
+            border-radius: 8px;
+	    border: 1px solid black;
+        }
+        h1 {
+            text-align: center;
+            color: #0073e6;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 95%;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: pointer;}
+	 .submit-btn:hover {
+            background-color: #005bb5;
+        }
+        .note {
+            font-size: 14px;
+            color: red;
+        }
+
+.logo-container {
+            width: 80px; 
+}
+
+.logo-container img {
+            height: auto;
+            width: 15%; 
+            width: 200px; /* Set a max width to avoid too large logos */
+        }
+    </style>
+<body>
+    <header>
+	<div class="logo-container">
+            <img src="logo.jpeg" alt="Logo">
+        </div>
+        <h1 style="color:white;">Welcome to AtTravels</h1>
+        <p>Your journey starts here!</p>
+    </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">AtTravels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourexperience.html">Experience</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="gilgit.html">Gilgit Guide</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="hunza.html">Hunza Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="booking.html">Bookings</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="toLogin.html">LogIn/SignUp</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="background-color:white;color:black;">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+        <h1 style="color:black;">Book Your Travel Now</h1>
+        <p class="note">Fill out the form below to book your next travel adventure in Pakistan!</p>
+        <form action="submit-booking.php" method="POST">
+            <!-- Traveler Information -->
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="destination">Destination</label>
+            <select id="destination" required>
+                <option value="" disabled selected>Select your destination</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="northern-areas">Northern Areas</option>
+                <option value="quetta">Quetta</option>
+            </select>
+
+            <!-- type=date is for calender -->
+            <label for="travel-date">Travel Date</label>
+            <input type="date" id="travel-date" required>
+            
+	    
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date" required>
+            
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" min="1" placeholder="Enter number of travelers" required>
+            
+            <label for="message">Additional Requirements or Notes</label>
+            <textarea id="message" rows="4" placeholder="Enter any specific requirements or notes"></textarea>
+
+            <button type="submit" class="submit-btn">Submit Booking</button>
+        </form>
+    </div>
+<footer>
+    <p style="text-align: center;">&copy; 2024 AtTravels. All Rights Reserved.</p>
+
+    <table>
+        <tr>
+            <td style="width: 50%; vertical-align: top;">
+                <h4>Contact Us At</h4>
+	        <p>contact: 03335567821</p>
+        	<p>email: i240034@isb.nu.edu.pk</p>
+        	<p>email: i240015@isb.nu.edu.pk</p>
+        	<p>email: i240034@isb.nu.edu.pk</p>
+        	<p>email: i240034@isb.nu.edu.pk</p>
+            </td>
+
+            <td style="width: 50%; vertical-align: top;">
+                <h4>Creators:</h4>
+                <p>Izza Fatima:Dua Zainab</p>
+                <p>Anum Ibrahim:Maryam Abid</p>
+<p> For more information, feel free to reach out to us:</p>
+    <ul>
+      <li>Email: <a href="mailto:info@gilgitguide.com">info@AtTravelsguide.com</a></li>
+      <li>Phone: +92 300 123 4567</li>
+      <li>Follow us on social media:
+        <a href="https://facebook.com/gilgitguide">Facebook</a> |
+        <a href="https://instagram.com/gilgitguide">Instagram</a>
+      </li>
+    </ul>
+                <p>Help Desk</p>
+            </td>
+        </tr>
+    </table>
+
+</footer>
+</body>
+</html>

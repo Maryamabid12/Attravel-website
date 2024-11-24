@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunza Valley</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+  <style>
+header{
+	background-color:DarkOliveGreen;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+footer{
+	padding: 20px;
+	background-color: DarkOliveGreen;
+	color: white;
+	margin-top:auto;
+}
+body {
+	 display: flex;	
+	flex-direction: column;
+	min-height: 100vh;
+}
+table{
+	width:100%;
+	color:white;
+	text-align: left;
+}
+    .header {
+      text-align: center;
+      padding: 30px;
+      background-color: #f5f5f5;
+    }
+    .about, .attractions, .interesting-facts, .best-time, .cuisine,.images , .footer {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 900px;
+      
+    }
+    .about p{
+     font-size: 1.2em; 
+}
+images {
+  display: flex;
+  justify-content: space-between; /* Distribute images evenly */
+  gap: 10px; /* Add spacing between images */
+}
+
+.images img {
+  width:100%; /* Each image takes up 30% of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 100px; /* Optional: rounded corners */
+ }
+ 
+.images {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Space between the images */
+}
+
+.images .left,
+.images .center,
+.images .right {
+  flex: 1; /* Allow equal space for each section */
+  text-align: center; /* Center content in each section */
+}
+
+ 
+    .cuisine {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 800px;
+      background-color: #fff8e1;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .cuisine h2 {
+      color: #8e44ad;
+      text-align: center;
+    }
+    .cuisine ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .cuisine li {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+ 
+       .best-time {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 800px;
+      background-color: #eaf2f8;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .best-time h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+   
+    .best-time li {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+.logo-container {
+            width: 80px; 
+}
+
+.logo-container img {
+            height: auto;
+            width: 15%; 
+            width: 200px; /* Set a max width to avoid too large logos */
+        }
+  </style>
+<body>
+
+<header>
+	<div class="logo-container">
+            <img src="logo.jpeg" alt="Logo">
+        </div>
+        <h1>Welcome to AtTravels</h1>
+        <p>Your journey starts here!</p>
+    </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">AtTravels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourexperience.html">Experience</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="gilgit.html">Gilgit Guide</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link active" href="hunza.html">Hunza Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="booking.html">Bookings</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="toLogin.html">LogIn/SignUp</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style="background-color:white;color:black;">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+  <img src="ht.jpg">  
+  
+    <h1>Welcome to Hunza Valley!
+    </h1>
+  
+  <div class="about">
+    <h2>About Hunza Valley</h2>
+    <p>
+    Hunza Valley is a perfect blend of natural beauty, adventure, and 
+culture. Whether you’re an explorer, a nature lover, or someone looking 
+for peace, Hunza promises an unforgettable experience.</p>
+  </div>
+  
+  
+  
+  <div class="attractions">
+    <h2>Top Attractions</h2>
+    <ul>
+      <li>Baltit Fort</li>
+      <li>Attabad Lake</li>
+      <li>Altit Fort</li>
+    </ul>
+    </div>
+    <div class="images">
+  <div class="left">
+    <img src="h1.jpg" alt="Baltit Fort">
+  </div>
+  <div class="center">
+    <img src="h2.jpg" alt="Attabad Lake">
+  </div>
+  <div class="right">
+    <img src="h3.jpg" alt="Altit Fort">
+  </div>
+</div>
+
+    
+    
+    <div class="cuisine">
+    <h2>Hunza Valley Cuisine</h2>
+    <p>Hunza Valley's cuisine is both unique and healthy, influenced by 
+the natural ingredients available in the region. Some popular dishes 
+include:</p>
+    <ul>
+      <li><strong>Chapshuro</strong> - A savory meat-filled pastry, similar to a meat pie, popular in Hunza.</li>
+      <li><strong>Dawdo</strong> - A hearty noodle soup served with vegetables and meat.</li>
+      <li><strong>Giyaling</strong> - A type of flatbread, often served with honey, apricot jam, or butter.</li>
+      <li><strong>Apricot Delicacies</strong> 
+      </li></ul></div>
+
+
+<div class="interesting facts">
+ 
+    <h3>"Interesting facts"</h3>
+   
+    <p align="left">1.Hunza is known for its high literacy rate, which is one of the highest in Pakistan.<br></p>
+ <p align="left">2.It is considered one of regions with the  longest-living populations globally.</p>
+<p align="left">3.The valley offers unparalleled views of eight-thousanders, including K2, Broad Peak, and Gasherbrum.</p>
+  </div>
+
+ <div class="best-time">
+    <h2>Best Time to Visit Hunza Valley</h2>
+    <p>Hunza Valley is a year-round destination, but the best time to visit depends on what you're looking for:</p>
+    <ul>
+      <li><strong>Spring (March to May)</strong> - Ideal for seeing flowers bloom and enjoying mild weather.</li>
+      <li><strong>Summer (June to August)</strong> - Perfect for outdoor activities, trekking, and sightseeing with warm temperatures.</li>
+      <li><strong>Autumn (September to November)</strong> - The valley turns into a colorful paradise with vibrant autumn foliage.</li>
+      <li><strong>Winter (December to February)</strong> - Cold and snowy, this season offers peace and solitude for winter lovers.</li>
+    </ul>
+  </div>
+
+<footer>
+    <p style="text-align: center;">&copy; 2024 AtTravels. All Rights Reserved.</p>
+
+    <table>
+        <tr>
+            <td style="width: 50%; vertical-align: top;">
+                <h4>Contact Us At</h4>
+	        <p>contact: 03335567821</p>
+        	<p>email: i240034@isb.nu.edu.pk</p>
+        	<p>email: i240015@isb.nu.edu.pk</p>
+        	<p>email: i240034@isb.nu.edu.pk</p>
+        	<p>email: i240034@isb.nu.edu.pk</p>
+            </td>
+
+            <td style="width: 50%; vertical-align: top;">
+                <h4>Creators:</h4>
+                <p>Izza Fatima:Dua Zainab</p>
+                <p>Anum Ibrahim:Maryam Abid</p>
+<p> For more information, feel free to reach out to us:</p>
+    <ul>
+      <li>Email: <a href="mailto:info@gilgitguide.com">info@AtTravelsguide.com</a></li>
+      <li>Phone: +92 300 123 4567</li>
+      <li>Follow us on social media:
+        <a href="https://facebook.com/gilgitguide">Facebook</a> |
+        <a href="https://instagram.com/gilgitguide">Instagram</a>
+      </li>
+    </ul>
+                <p>Help Desk</p>
+            </td>
+        </tr>
+    </table>
+
+</footer>
+
+ 
+</body></html>
